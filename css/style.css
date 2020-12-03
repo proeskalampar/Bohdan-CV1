@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Major+Mono+Display&family=Texturina:ital,wght@0,700;1,400;1,500&display=swap');
+
+
+
+html {
+    font-family: 'Texturina', serif;
+    background-color:rgb(61, 58, 58);
+    text-indent: 20px;
+}
+
+h1 {
+color: #ad9379;  
+text-align: center;  
+font-family: 'Major Mono Display', monospace;
+font-size: 32px;
+}
+
+h2 {
+    color: #9bbfcf;   
+    text-align: center;  
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+   }
+
+h3 {
+    color: #b9e2f5;   
+    font-size: 22px;
+   }
+
+   h4 {
+    color: #769bac;   
+    font-size: 20px;
+   }
+
+   h5 {
+    color: #df840d;   
+    font-size: 18px;
+   }
+
+p {
+    color:#da9849;
+    font-size: 18px;
+}
+
+li {
+    color: #dada49;
+    font-size: 18px;
+}
+table {
+    border: width 7px;;
+    border-color: red;
+}
+
+ul,ol {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+td {
+    color: seagreen;
+}
+th {
+    color: rgb(8, 102, 8);
+}
+
+a {
+    color: red;
+}
+a.content{
+    color:teal
+}
+h3.table {
+    text-align: center;
+}
