@@ -47,16 +47,18 @@ li {
     font-size: 18px;
 }
 table {
-    border: width 7px;;
-    border-color: red;
+    border:8px thick;
+    border-collapse: collapse;
+    text-indent: 0px;
 }
 
 ul,ol {
     padding-left: 20px;
     list-style-position: inside;
 }
-td {
-    color: seagreen;
+td,tr, th {
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
 }
 th {
     color: rgb(8, 102, 8);
