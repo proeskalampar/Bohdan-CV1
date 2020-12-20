@@ -1,0 +1,195 @@
+
+html {
+    font-family: 'Texturina', serif;
+    background-color:white;
+    text-indent: 20px;
+}
+
+header, nav, aside { 
+border-collapse: collapse;
+}
+
+body {
+  display:grid;
+  grid-template-columns: 1fr minmax(fit-content, 1000px) 1fr;
+  grid-template-areas: 
+  "nav nav nav"
+  "header header header"
+  "aside main main"
+  "section section article" /* я так понял, если ты уже заранее задал позицию для чего-то и прописал это через grid-area (например в моем случае это section section), то когда ты вставляешь article, то он уже автоматически подстраивается справа от section section?*/
+  "footer footer footer"
+  "div div div"
+}
+
+header{
+    grid-area: header;
+    background-image: url(../kartinki/nvn-logo.png);
+    background-color: black;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 300px;
+}
+
+
+nav {
+    display: flex;
+    grid-area: nav;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color:  #ffffff;
+    min-height:40px;
+   /* position: fixed;
+    top: 10px; хотел таким образом закрепить меню, чтобы при скролле вниз оно оставалось фиксированным, но не получилось (оно вылезло влево и заняло всю страницу) почему? */
+} 
+
+aside{
+grid-area: aside;
+background-color: grey;
+min-width: 560px; /*пока не прописал это значение, то как только я добавлял текст в main  - то aside скрывался, почему?*/
+}
+
+main {
+grid-area: main;
+background-color: rgb(255, 255, 255) ;
+height: 100%;
+}
+
+article{
+grid-area:article;
+background-image: url(../kartinki/we-dont-need-no-education.png);
+background-size: cover;
+background-position: top;
+background-repeat: repeat;
+width: 100%;
+height: auto;
+min-width: 600px;
+background-color: #C59184;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+h1 {
+color: #ad9379;  
+text-align: center;  
+font-family: 'Major Mono Display', monospace;
+font-size: 38px;
+grid-area: header;
+margin-bottom: 200px;
+}
+
+h2 {
+    color: #ffffff;   
+    text-align: center;  
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    grid-area: header;
+   }
+
+h3{
+text-align: center;
+font-weight: bold;   /*не работает потому-что шрифт не поддерживает?*/
+}
+
+
+a{
+text-decoration: none;
+transition: all 0.5s;
+color:black;
+}
+
+a:hover {
+color:gray;
+font-size:24px;
+}
+
+.a-icons{
+    text-decoration: none;
+    }
+
+.a-icons:hover {
+        color: black;
+        font-size:35px;
+        }
+
+
+.fa-telegram:hover {
+    color: #28A8E9;
+}
+
+.fa-vk:hover {
+    color: #5181B8;
+}
+
+.fa-lastfm:hover {
+    color: #CC0000;
+}
+
+.fa-instagram:hover {
+    color: #e29117;
+}
+
+ul{
+    list-style:none;
+}
+.icons{
+    display: flex;
+    font-size:30px;
+    justify-content: center;
+}
+
+.icons .fab:first-child {
+    padding-left: 0;
+}
+.main-p{
+    text-align: center;
+}
+
+section {
+background-color: black;
+}
+
+.jobs{
+grid-area: section;
+color: white;
+}
+.a-jobs{
+color:green;
+}
+.a-jobs:hover{
+color:gray;
+font-size: 20px;
+transition: all 0.3s;
+}
+
+.experiment
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+    font-size: 100%;
+    background-color:rgb(197, 145, 132);
+}
+
+footer{
+grid-area:footer;
+padding-top: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: black;
+}
+
+div{
+grid-area: div;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+margin-bottom: 10px;
+min-height: 80px;
+background-color: grey;
+}
